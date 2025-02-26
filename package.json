@@ -1,0 +1,43 @@
+{
+  "name": "threejs-scene-debugger",
+  "version": "1.0.0",
+  "description": "A Three.js Scene debugger using lil-gui",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "config": {
+    "style": "dist/lil-gui.css"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c --watch --environment DEV:true",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "threejs",
+    "debugger",
+    "lil-gui",
+    "scene"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "three": "^0.150.0 || ^0.151.0 || ^0.152.0",
+    "lil-gui": "^0.17.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/three": "^0.152.1",
+    "rollup": "^4.20.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^2.0.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.5.4"
+  },
+  "files": [
+    "dist"
+  ]
+}

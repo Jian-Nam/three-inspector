@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 최신 ECMAScript 타겟
+    "module": "ESNext", // ES 모듈 시스템 (브라우저 환경에 적합)
+    "outDir": "./dist", // 컴파일 출력 디렉터리
+    "rootDir": "./src", // 소스 파일의 루트 디렉터리
+    "jsx": "react-jsx", // React JSX 지원 (필요 시 "preserve"로 변경 가능)
+    "moduleResolution": "node", // Node.js 스타일 모듈 해석
+    "strict": true, // 엄격한 타입 체크
+    "esModuleInterop": true, // ES 모듈과 CommonJS 상호 운용성
+    "skipLibCheck": true, // .d.ts 파일 체크 스킵
+    "forceConsistentCasingInFileNames": true, // 파일 이름 대소문자 일관성
+    "noEmit": false, // 컴파일 시 파일 출력 허용
+    "sourceMap": true // 디버깅을 위한 소스맵 생성
+  },
+  "include": [
+    "src/**/*" // src 폴더 내 모든 파일 포함
+  ],
+  "exclude": [
+    "node_modules", // node_modules 제외
+    "dist", // dist 폴더 제외
+    "example" // example 폴더 제외
+  ]
+}
